@@ -10,7 +10,7 @@ while [ "$1" != "" ]
 do
   pushd .
   cd ${1}
-  docker build -t devneko/${1}:ubuntu-15.10 .
+  docker build -t dotneet/${1}:ubuntu-15.10 .
   if [ $? -ne 0 ];then
     echo failed to build ${1}. >&2
     exit 1

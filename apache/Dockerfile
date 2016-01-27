@@ -1,4 +1,4 @@
-FROM devneko/base:ubuntu-15.10
+FROM dotneet/ubuntu-base:ubuntu-15.10
 MAINTAINER devneko<dotneet@gmail.com>
 
 RUN apt-get install -y g++ build-essential libexpat1-dev libpcre3-dev libpcre++-dev libz-dev

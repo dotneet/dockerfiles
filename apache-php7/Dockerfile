@@ -1,4 +1,4 @@
-FROM devneko/apache:ubuntu-15.10
+FROM dotneet/apache:ubuntu-15.10
 MAINTAINER devneko<dotneet@gmail.com>
 
 RUN apt-get install -y libicu-dev libmcrypt-dev libxml2-dev libcurl4-openssl-dev libssl-dev pkg-config
