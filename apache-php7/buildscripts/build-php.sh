@@ -16,6 +16,7 @@ mkdir /etc/php.d
             --with-openssl \
             --with-mysqli=mysqlnd \
             --with-pdo-mysql=mysqlnd \
+            --with-pdo-pgsql= \
             --with-apxs2=/usr/local/apache2/bin/apxs \
             --with-xmlrpc \
             --with-curl \
