@@ -1,7 +1,7 @@
 #!/bin/bash
 
 WORKDIR=/docker/src/php7
-PHP_VERSION=7.0.2
+PHP_VERSION=7.0.6
 
 cd ${WORKDIR}
 tar zxf php-${PHP_VERSION}.tar.gz
@@ -12,8 +12,11 @@ mkdir /etc/php.d
             --enable-intl \
             --enable-mbstring \
             --enable-zip \
+            --enable-phpdbg \
+            --enable-pcntl \
             --with-zlib \
             --with-openssl \
+            --with-iconv \
             --with-mysqli=mysqlnd \
             --with-pdo-mysql=mysqlnd \
             --with-apxs2=/usr/local/apache2/bin/apxs \
