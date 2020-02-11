@@ -1,7 +1,7 @@
 FROM dotneet/apache:ubuntu-15.10
 MAINTAINER devneko<dotneet@gmail.com>
 
-RUN apt-get install -y libicu-dev libmcrypt-dev libxml2-dev libcurl4-openssl-dev libssl-dev pkg-config
+RUN apt-get install -y libicu-dev libmcrypt-dev libxml2-dev libcurl4-openssl-dev libssl-dev pkg-config libpq-dev dnsutils
 
 RUN mkdir -p /docker/src/php7
 ADD src /docker/src/php7
